@@ -23,7 +23,7 @@ const Randomusers = () => {
 
   return (
     <main style={{ padding: '16px', display: 'flex', flexWrap: 'wrap' , gap: '24px', justifyItems: 'center' }}>
-      <button onClick={fetchUsers} style={{fontSize: '16px' , fontWeight: '500', color: 'white', backgroundColor: 'darkblue' , padding: '16px', borderRadius: '16px'}}> Get New Users</button>
+      <button onClick={fetchUsers} style={{fontSize: '16px' , fontWeight: '500', color: 'white', backgroundColor: 'darkblue' , padding: '16px', borderRadius: '16px'}} onMouseEnter={(e) => (e.target.style.backgroundColor = 'blue')} onMouseLeave={(e) => (e.target.style.backgroundColor = 'darkblue')}  > Get New Users</button>
       {loading ? (
         <p>Loading...</p>
       ) : (
