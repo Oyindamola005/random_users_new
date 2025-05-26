@@ -33,8 +33,8 @@ const Randomusers = () => {
           {users.map((user, index) => (
             <div  key={index} style={{ border: '0.5px solid darkblue', padding: '16px', borderRadius: '10px',  backgroundColor: 'white', minWidth: '250px', gap: '8px', transition:'box-shadow o.3s ease',
               boxShadow:
-              hoveredCard === index ? '0 8px 16px rgba(0,0,0,0.2)'
-                : '0 2px 6px rgba(0,0,0,0.1)',
+              hoveredCard === index ? '0 8px 16px rgba(0, 0, 0, 0.2)'
+                : '0 2px 6px rgba(0, 0, 0, 0.1)',
             }} onMouseEnter={() => setHoveredCard(index)}
           onMouseLeave={() => setHoveredCard(null)} >
               <img style={{borderRadius: '8px' , justifySelf: 'center'}}  src={user.picture.medium} alt="User" />
